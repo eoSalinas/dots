@@ -1,0 +1,18 @@
+# general settings
+setxkbmap -model abnt2 -layout br
+
+# set wallpaper (use default if none selected before)
+WALLPAPER_PATH="$(cat "$XDG_CACHE_HOME/wal/wal")"
+
+if [ ! -s "$WALLPAPER_PATH" ]; then
+    WALLPAPER_PATH="$HOME/wallpapers/nice-blue-background.png"
+    "$XDG_CONFIG_HOME/scripts/set-wallpaper" "$WALLPAPER_PATH"
+fi
+
+# setup
+feh --bg-fill "$WALLPAPER_PATH" &
+picom &
+dunst &
+dwmblocks &
+"$XDG_CONFIG_HOME/scripts/pywal16" &
+exec dwm 
