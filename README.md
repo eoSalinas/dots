@@ -1,15 +1,17 @@
 ## dots
-This repo includes configs for most of the tools I use daily.
 
-### how to use
+Minimal dotfiles and configurations for daily use — now based on the [Omarchy](https://github.com/basecamp/omarchy) environment.
 
-Clone it, symlink what you need:
 
-```sh
-git clone https://github.com/eoSalinas/dots
-```
+Included:
+- shell aliases and functions
+- tmux configuration
+- vim binds for hyprland
 
-then link configs:
-```sh
-ln -s ~/.dots/tmux ~/.config/tmux
-```
+Prerequisites:
+- Omarchy (base environment)
+- tmux
+- yazi (requires 7zip, resvg)
+
+Quick start:
+Clone into ~/dots and follow your Omarchy setup to symlink or source the configs.
