@@ -26,9 +26,5 @@ alias gaa='git add --all'
 alias gp="git push"
 alias gco='git checkout'
 alias gc='git commit'
-alias gcm='git commit --message'
-alias gcam='git commit --all --message'
 alias gfa='git fetch --all --tags --prune'
 alias gsw='git switch'
-alias gswc='git switch -c'
-
