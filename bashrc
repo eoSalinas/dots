@@ -29,3 +29,5 @@ alias gco='git checkout'
 alias gc='git commit'
 alias gfa='git fetch --all --tags --prune'
 alias gsw='git switch'
+
+alias gl='lazygit'
