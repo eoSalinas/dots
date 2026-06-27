@@ -3,8 +3,8 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # key bindings
 bind '"\es": "tmux-sessionizer\n"'
+bind '"\et": "tmux new-session -As $(basename $PWD)\n"'
 bind '"\ee": "yazi\n"'
-bind '"\et": "tmux\n"'
 
 # interactive nvim with fzf file picker
 inv() {
